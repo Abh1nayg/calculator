@@ -52,19 +52,19 @@ function calculateLove() {
       
       // Add a message based on the score
       let message = '';
-      if (finalScore >= 95) {
+        if (finalScore >= 95) {
         message = 'You\'re Locked in now';
-      } else if(finalScore >= 80) {
+        } else if (finalScore >= 80) {
         message = 'Perfect match! You two are meant to be together!';
-      } else if (finalScore >= 60) {
+        } else if (finalScore >= 60) {
         message = 'Great chemistry! Your love has strong potential.';
-      } else if (finalScore >= 40) {
+        } else if (finalScore >= 40) {
         message = 'There\'s definitely something there. Worth exploring!';
-      } else if (finalScore >= 20) {
+        } else if (finalScore >= 20) {
         message = 'You might need to work on your connection a bit more.';
-      } else {
+        } else {
         message = 'Perhaps you\'re better as friends for now.';
-      }
+        }
       
       document.getElementById('loveMessage').textContent = message;
     }, 1000);
