@@ -52,7 +52,9 @@ function calculateLove() {
       
       // Add a message based on the score
       let message = '';
-      if (finalScore >= 80) {
+      if (finalScore >= 95) {
+        message = 'You\'re Locked in now';
+      } else if(finalScore >= 80) {
         message = 'Perfect match! You two are meant to be together!';
       } else if (finalScore >= 60) {
         message = 'Great chemistry! Your love has strong potential.';
