@@ -61,7 +61,7 @@ function calculateLove() {
       
       // Long name nerf (chance-based)
       if (letterCount >= longNameThreshold && Math.random() < 0.7) { // 70% chance
-        let nerfAmount = Math.floor(Math.random() * 15) + 5; // -5 to -20 points
+        let nerfAmount = Math.floor(Math.random() * 15) + 15; // -5 to -20 points
         modifier -= nerfAmount;
         console.log("Long name nerf: -" + nerfAmount);
       }
