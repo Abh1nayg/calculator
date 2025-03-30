@@ -47,8 +47,8 @@ function calculateLove() {
     // Apply buffs and nerfs based on name length
     function applyLengthModifiers(baseScore, letterCount) {
       // Define what constitutes short and long names
-      const shortNameThreshold = 6;  // 3 letters per name on average
-      const longNameThreshold = 12;  // 6 letters per name on average
+      const shortNameThreshold = 4;  // 3 letters per name on average
+      const longNameThreshold = 8;  // 6 letters per name on average
       
       let modifier = 0;
       
