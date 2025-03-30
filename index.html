@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Love Calculator</title>
 </head>
 <body>
-    
+<div class="container">
+  <h1>Love Calculator</h1>
+  <div class="input-group">
     <input type="text" name="name1" placeholder="Enter your name" id="name1" required>
-    <label for="name1"></label>
-    <input type="text" name="name2" placeholder="Enter your partners name" id="name2" required>
-    <label for="name2"></label>    
-    <button type="submit" onclick="display()">submit</button>
-    <script src="script.js"></script>
+    <label for="name1">Your Name</label>
+  </div>
+  <div class="input-group">
+    <input type="text" name="name2" placeholder="Enter your partner's name" id="name2" required>
+    <label for="name2">Partner's Name</label>
+  </div>
+  <button type="submit" onclick="calculateLove()">Calculate Love</button>
+  <div class="result">
+    <h3>Love Score:</h3>
+    <p><span id="loveScore">0</span>%</p>
+    <p id="loveMessage"></p>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
